@@ -1,0 +1,47 @@
+Rigidbody
+
+Collider
+
+Object의 위치 값 가져오기
+  - x값 : transform.position.x, y값 : transform.position.y, z값 : transform.position.z -> float 변수형으로 반환함
+
+Object의 각도 값 가져오기
+ - transfrom.localEulerAngles.x; -> 이것도 float형임
+
+API Vector3 : 3차원 벡터와 위치 표현, 벡터연산을 위한 함수
+  -위치를 지정하고 싶을 땐 : transfrom.position=new Vector3(x,y,z);로 해당 오브젝트의 위치 지정
+
+소수를 float형식으로 쓰고 싶을 땐 뒤에 f를 붙임 ex) 0.1f
+
+API GetComponent : 해당 오브젝트의 구성요소에 관한 정보를 가져옴
+  - AddForce : 컴포넌트에 힘을 가함, 인수는...Vector3...?
+
+다른 오브젝트 참조
+  - GameObject.Find("참조하고자 하는 오브젝트 이름");
+
+사용자 입력받기(Input)
+  키보드 입력
+    -Input.GetAxis("Horizontal/Vertical")
+      Horizontal일 경우 : <-화살표 누르면 -1로 입력받고, -> 화살표 누르면 1 입력받음
+      Vertical일 경우
+    -Input.GetKeyDown(KeyCode.누를 key의 이름 예를 들어 스페이스바면 Space)
+      : key가 눌릴때(down) 입력을 받는다
+    -Input.GetKeyUP(......
+      : key가 눌렸다 떼어졌을때(up)입력을 받는다
+    -Input.GetKey(....
+      : key가 눌리는 동안 입력을 받는다
+  마우스 입력
+    -Input.GetMouseButton(0)
+     : 0은 왼쪽 마우스 버튼 눌렀을 때, 
+    -Input.touchCount
+     : 클릭 횟수 반환
+    -Input.mousePosition
+     : 마우스 커서의 위치값을 가져옴
+
+빈 오브젝트를 통해 여러 오브젝트를 묶음으로써 같은 행동을 하도록 할 수 있음
+
+local vs global
+  - local : 상대적인 위치
+  -global : 절대적인 위치   
+
+
