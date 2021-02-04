@@ -1,6 +1,8 @@
 Rigidbody
+중력
 
 Collider
+충돌
 
 Object의 위치 값 가져오기
   - x값 : transform.position.x, y값 : transform.position.y, z값 : transform.position.z -> float 변수형으로 반환함
@@ -43,5 +45,25 @@ API GetComponent : 해당 오브젝트의 구성요소에 관한 정보를 가�
 local vs global
   - local : 상대적인 위치
   -global : 절대적인 위치   
+
+GetComponent
+mess:질량
+
+GameManager 클래스
+
+UI 그리기
+ - using UnityEngin.UI;
+ - public text cointText;
+ - coinText.text=coinCount+"개:;
+ 
+class vs script vs component
+ - script : 파일, 하나의 클래스만 넣는 것을 권장
+ - component : 클래스는 설계도이고 Component는 클래스 기반으로 만들어진 객체 
+ - 컴포넌트 일련번호 가져오기 : GetInstanceID();
+ 
+상속
+ - 오버라이딩 : base.Update()
+    (부모클래스에서 Update클래스를 public으로 바꿔줘야 가능, base는 부모클래스를 의미)
+ 
 
 
